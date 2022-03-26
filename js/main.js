@@ -2,7 +2,7 @@ var gameData = {
     taskData: {},
     itemData: {},
 
-    coins: 0,
+    coins: 10000000,
     days: 365 * 14,
     evil: 0,
     paused: false,
@@ -43,7 +43,7 @@ if(devModeFastProgress == 1) {
 const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task display"]
 
 const jobBaseData = {
-    "Beggar": {name: "Beggar", maxXp: 50, income: 5},
+    "Beggar": {name: "Beggar", maxXp: 1, income: 5},
     "Farmer": {name: "Farmer", maxXp: 100, income: 9},
     "Fisherman": {name: "Fisherman", maxXp: 200, income: 15},
     "Miner": {name: "Miner", maxXp: 400, income: 40},
@@ -91,7 +91,7 @@ const jobBaseData = {
 }
 
 const skillBaseData = {
-    //original effect: 0.01
+    //original effect: 1.01
     //Fundamentals
     "Concentration": {name: "Concentration", maxXp: 100, effect: baseEffect, description: "Skill xp"},
     "Productivity": {name: "Productivity", maxXp: 100, effect: 0.01, description: "Job xp"},
