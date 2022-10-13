@@ -4,11 +4,11 @@ var gameData = {
 
     coins: 100000000000,
     days: 365 * 14,
-    evil: 0,
+    evil: 1000000000,
     paused: false,
     timeWarpingEnabled: true,
 
-    rebirthOneCount: 0,
+    rebirthOneCount: 10,
     rebirthTwoCount: 0,
 
     currentJob: null,
@@ -26,7 +26,7 @@ const autoLearnElement = document.getElementById("autoLearn")
 
 const updateSpeed = 20
 
-const baseLifespan = 365 * 70
+const baseLifespan = 365 * 700
 
 //Turn on devmode: 1
 //Turn off devmode: 0
@@ -91,7 +91,7 @@ const jobBaseData = {
 }
 
 const skillBaseData = {
-    //original effect: 10.01
+    //original effect: 10000.01
     //Fundamentals
     "Concentration": {name: "Concentration", maxXp: 100, effect: baseEffect, description: "Skill xp"},
     "Productivity": {name: "Productivity", maxXp: 100, effect: 0.01, description: "Job xp"},
